@@ -102,7 +102,7 @@ namespace Nemerle.Tools.MSBuildTask
         }
         protected override int ExecuteTool(    string pathToTool,    string responseFileCommands,    string commandLineCommands)
         {
-          return   base.ExecuteTool(pathToTool, responseFileCommands, " exec /home/nn/Downloads/Nemerle/ncc-core.dll -use-loaded-corlib " + commandLineCommands);
+          return   base.ExecuteTool(pathToTool, responseFileCommands, " exec /home/nn/Downloads/Nemerle/NccCore/ncc-core.dll " + commandLineCommands);
         }
         
         private string FindExecutable(string toolName)

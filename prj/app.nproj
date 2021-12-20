@@ -1,15 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
 <PropertyGroup>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>None</DebugType>
     <NoStdLib>True</NoStdLib>
-    <OutputType>dll</OutputType>
+    <OutputType>exe</OutputType>
     <OutputPath>bin</OutputPath>
     <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>6.0</TargetFrameworkVersion>
     <TargetFramework>net6.0</TargetFramework>
-    <Nemerle>/home/nn/Downloads/Nemerle</Nemerle>
+    <Nemerle>/home/nn/Downloads/Nemerle/NccCore/</Nemerle>
     <LibraryTargetFrameworks>net6.0</LibraryTargetFrameworks>
     <RuntimeOutputTargetFrameworks>net6.0</RuntimeOutputTargetFrameworks>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseWindowsForms>false</UseWindowsForms>
+    <UseWPF>false</UseWPF>
   </PropertyGroup>
  
 <ItemGroup>
