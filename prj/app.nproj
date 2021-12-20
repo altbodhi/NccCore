@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+<PropertyGroup>
+    <NoStdLib>True</NoStdLib>
+    <OutputType>dll</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkIdentifier>.NETCoreApp</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>6.0</TargetFrameworkVersion>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nemerle>/home/nn/Downloads/Nemerle</Nemerle>
+    <LibraryTargetFrameworks>net6.0</LibraryTargetFrameworks>
+    <RuntimeOutputTargetFrameworks>net6.0</RuntimeOutputTargetFrameworks>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+ 
+<ItemGroup>
+   <Reference Include="mscorlib" />
+   <Reference Include="System.Core" />
+   <Reference Include="System"  />
+   <Reference Include="System.Runtime" />
+   <Reference Include="System.Console" />
+  <Reference Include="Nemerle" >
+  <HintPath>$(Nemerle)/Nemerle.dll</HintPath>
+  </Reference>
+ 
+</ItemGroup>
+<Import Project="$(Nemerle)/Nemerle.MSBuild.targets" />
+
+</Project>

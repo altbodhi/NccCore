@@ -1,0 +1,13 @@
+using System.Console;
+
+module Say {
+    
+    public Main() : void {
+        def hello = Hello();
+        WriteLine(hello);
+    }
+    
+    public Hello() : string { 
+        "Hello, world!" 
+    }
+}
