@@ -1,13 +1,24 @@
 using System.Console;
+using System.Threading;
+using System;
 
-module Say {
-    
-    public Main() : void {
-        def hello = Hello();
-        WriteLine(hello);
-    }
-    
-    public Hello() : string { 
-        "Hello, world!" 
+CursorVisible = false;
+while(true) {
+    def max = 79;
+    for(mutable i=0; i< max; i++) {
+        Clear();
+        SetCursorPosition(0,10);
+            
+        for(mutable j=0; j<i; j++) 
+            Write(if( i - j > 3) " " else "-");
+        
+        def rotor = e => {
+            SetCursorPosition(i, 10);
+            Write(e); Thread.Sleep(100);
+        };
+
+        foreach(c in ["-", "/", "|", "\\", "-", "+", "*"])
+            rotor(c);        
     }
 }
+
